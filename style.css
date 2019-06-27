@@ -1,0 +1,142 @@
+@font-face {
+    font-family: BebasNeue; /* Гарнитура шрифта */
+    src: url("fonts/BebasNeue-Regular.otf"); /* Путь к файлу со шрифтом */
+}
+
+body {
+    background-color: #fff;
+    font-family: BebasNeue, "Arial", sans-serif;
+    margin: 0;
+}
+
+
+/*------------header------------*/
+.container {
+    margin: 15px auto;
+    max-width: 1010px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_form {
+    position: relative;
+    line-height: 47px;
+}
+.search_form__input {
+    color: #a1a1a1;
+
+    box-sizing: border-box;
+    padding: 5px 15px;
+    width: 435px;
+    height: 33px;
+    border: 1px solid #e1e1e1;
+}
+.search_form__search {
+    position: absolute;
+    top: 6px;
+    right: 9px;
+}
+
+.main_header__cart {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+}
+.cart__link {
+    display: block;
+    position: relative;
+}
+.cart__link:hover {
+    opacity: 0.6;
+}
+.cart__img {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    right: 0;
+}
+.cart__price {
+    margin: 0;
+
+    line-height: 47px;
+    font-size: 33px;
+    color: #a1a1a1;
+}
+
+.main_header__navigation {
+    background-color: #4ccfc1;
+}
+.main_navigation__list {
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #4ccfc1;
+    list-style: none;
+}
+.main_navigation__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+    margin: 8px 0;
+    padding-right: 32px;
+
+    border-right: 1px solid #fff;
+}
+.main_navigation__item:last-child .main_navigation__link{
+    border-right: none;
+    padding-right: 0;
+}
+.main_navigation__link:hover {
+    text-decoration: underline;
+}
+
+/*------------main------------*/
+
+
+
+/*------------footer------------*/
+.main_footer {
+    background-color: #4ccfc1;
+}
+.main_footer__section {
+    max-width: 1010px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_footer__border {
+    border-bottom: 45px solid #2da89b;
+}
+.main_footer__heading {
+    margin-top: 40px;
+
+    font-size: 27px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main_footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 35px;
+}
+
+.main_footer__link {
+    font-family: "Open Sans", "Arial", sans-serif;
+
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.main_footer__link:hover {
+    text-decoration: underline;
+}

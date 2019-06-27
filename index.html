@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="main_header">
-    <div class="main-header__logo">
-        <img src="pictures/logo.png" class="logo__img">
-    </div>
-    <div class="main_header__search">
-        <form>
-
-        </form>
-    </div>
-    <div class="main_header__cart">
-        <img src="pictures/cart.png">
-        <p>$300</p>
+    <div class="container">
+        <div class="main-header__logo">
+            <img src="pictures/logo.png" class="logo__img">
+        </div>
+        <div class="main_header__search">
+            <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="search_form__input" type="text" name="search">
+                <a class="search_form__search" href="#"><img src="pictures/search.png"></a>
+            </form>
+        </div>
+        <div class="main_header__cart">
+            <a href="#" class="cart__link"><img class="cart__img" src="pictures/cart.png"></a>
+            <p class="cart__price">$300</p>
+        </div>
     </div>
     <nav class="main_header__navigation main_navigation">
-        <ul>
-            <li class="main_navigation__item"><a href="#">Home</a></li>
-            <li class="main_navigation__item"><a href="#">Sale</a></li>
-            <li class="main_navigation__item"><a href="#">Handbags</a></li>
-            <li class="main_navigation__item"><a href="#">Wallets</a></li>
-            <li class="main_navigation__item"><a href="#">Accessories</a></li>
-            <li class="main_navigation__item"><a href="#">Mens store</a></li>
-            <li class="main_navigation__item"><a href="#">Shoes</a></li>
-            <li class="main_navigation__item"><a href="#">Vintage</a></li>
-            <li class="main_navigation__item"><a href="#">Services</a></li>
-            <li class="main_navigation__item"><a href="#">Contact us</a></li>
+        <ul class="main_navigation__list">
+            <li class="main_navigation__item"><a class="main_navigation__link" href="#">Home</a></li>
+            <li class="main_navigation__item"><a class="main_navigation__link" href="#">Sale</a></li>
+            <li class="main_navigation__item"><a class="main_navigation__link" href="#">Handbags</a></li>
+            <li class="main_navigation__item"><a class="main_navigation__link" href="#">Wallets</a></li>
+            <li class="main_navigation__item"><a class="main_navigation__link" href="#">Accessories</a></li>
+            <li class="main_navigation__item"><a class="main_navigation__link" href="#">Mens store</a></li>
+            <li class="main_navigation__item"><a class="main_navigation__link" href="#">Shoes</a></li>
+            <li class="main_navigation__item"><a class="main_navigation__link" href="#">Vintage</a></li>
+            <li class="main_navigation__item"><a class="main_navigation__link" href="#">Services</a></li>
+            <li class="main_navigation__item"><a class="main_navigation__link" href="#">Contact us</a></li>
         </ul>
     </nav>
 </header>
@@ -128,60 +132,62 @@
 </main>
 
 <footer class="main_footer">
-    <section class="main_footer__links">
-        <div>
-            <h3>Featured sale</h3>
-            <ul>
-                <li><a href="#">Alexis Hudson</a></li>
-                <li><a href="#">American Apparel</a></li>
-                <li><a href="#">Ben Sherman</a></li>
-                <li><a href="#">Big Buddha</a></li>
-                <li><a href="#">Chanel</a></li>
-                <li><a href="#">Christian Audigier</a></li>
-                <li><a href="#">Coach</a></li>
-                <li><a href="#">Cole Haan</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Mens store</h3>
-            <ul>
-                <li><a href="#">Alexis Hudson</a></li>
-                <li><a href="#">American Apparel</a></li>
-                <li><a href="#">Ben Sherman</a></li>
-                <li><a href="#">Big Buddha</a></li>
-                <li><a href="#">Chanel</a></li>
-                <li><a href="#">Christian Audigier</a></li>
-                <li><a href="#">Coach</a></li>
-                <li><a href="#">Cole Haan</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Women store</h3>
-            <ul>
-                <li><a href="#">Alexis Hudson</a></li>
-                <li><a href="#">American Apparel</a></li>
-                <li><a href="#">Ben Sherman</a></li>
-                <li><a href="#">Big Buddha</a></li>
-                <li><a href="#">Chanel</a></li>
-                <li><a href="#">Christian Audigier</a></li>
-                <li><a href="#">Coach</a></li>
-                <li><a href="#">Cole Haan</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Quick links</h3>
-            <ul>
-                <li><a href="#">Alexis Hudson</a></li>
-                <li><a href="#">American Apparel</a></li>
-                <li><a href="#">Ben Sherman</a></li>
-                <li><a href="#">Big Buddha</a></li>
-                <li><a href="#">Chanel</a></li>
-                <li><a href="#">Christian Audigier</a></li>
-                <li><a href="#">Coach</a></li>
-                <li><a href="#">Cole Haan</a></li>
-            </ul>
-        </div>
-    </section>
+    <div class="main_footer__border">
+        <section class="main_footer__section">
+            <div>
+                <h3 class="main_footer__heading">Featured sale</h3>
+                <ul class="main_footer__list">
+                    <li><a href="#" class="main_footer__link">Alexis Hudson</a></li>
+                    <li><a href="#" class="main_footer__link">American Apparel</a></li>
+                    <li><a href="#" class="main_footer__link">Ben Sherman</a></li>
+                    <li><a href="#" class="main_footer__link">Big Buddha</a></li>
+                    <li><a href="#" class="main_footer__link">Chanel</a></li>
+                    <li><a href="#" class="main_footer__link">Christian Audigier</a></li>
+                    <li><a href="#" class="main_footer__link">Coach</a></li>
+                    <li><a href="#" class="main_footer__link">Cole Haan</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="main_footer__heading">Mens store</h3>
+                <ul class="main_footer__list">
+                    <li><a href="#" class="main_footer__link">Alexis Hudson</a></li>
+                    <li><a href="#" class="main_footer__link">American Apparel</a></li>
+                    <li><a href="#" class="main_footer__link">Ben Sherman</a></li>
+                    <li><a href="#" class="main_footer__link">Big Buddha</a></li>
+                    <li><a href="#" class="main_footer__link">Chanel</a></li>
+                    <li><a href="#" class="main_footer__link">Christian Audigier</a></li>
+                    <li><a href="#" class="main_footer__link">Coach</a></li>
+                    <li><a href="#" class="main_footer__link">Cole Haan</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="main_footer__heading">Women store</h3>
+                <ul class="main_footer__list">
+                    <li><a href="#" class="main_footer__link">Alexis Hudson</a></li>
+                    <li><a href="#" class="main_footer__link">American Apparel</a></li>
+                    <li><a href="#" class="main_footer__link">Ben Sherman</a></li>
+                    <li><a href="#" class="main_footer__link">Big Buddha</a></li>
+                    <li><a href="#" class="main_footer__link">Chanel</a></li>
+                    <li><a href="#" class="main_footer__link">Christian Audigier</a></li>
+                    <li><a href="#" class="main_footer__link">Coach</a></li>
+                    <li><a href="#" class="main_footer__link">Cole Haan</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="main_footer__heading">Quick links</h3>
+                <ul class="main_footer__list">
+                    <li><a href="#" class="main_footer__link">Alexis Hudson</a></li>
+                    <li><a href="#" class="main_footer__link">American Apparel</a></li>
+                    <li><a href="#" class="main_footer__link">Ben Sherman</a></li>
+                    <li><a href="#" class="main_footer__link">Big Buddha</a></li>
+                    <li><a href="#" class="main_footer__link">Chanel</a></li>
+                    <li><a href="#" class="main_footer__link">Christian Audigier</a></li>
+                    <li><a href="#" class="main_footer__link">Coach</a></li>
+                    <li><a href="#" class="main_footer__link">Cole Haan</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
 </footer>
 </body>
 </html>
